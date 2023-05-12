@@ -64,6 +64,7 @@ const Orders = () => {
     < Table
       columns={columns}
       dataSource={orders}
+      rowKey={(item)=>item.id}
       scroll={{
         x: 1000,
       }}
