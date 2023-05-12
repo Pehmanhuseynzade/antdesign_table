@@ -6,7 +6,7 @@ export const getAllOrders = async()=>{
     let globalData;
     await axios.get(`${BASE_URL}/orders`)
     .then(res=>{
-        globalData = res.data;
+        globalData = res.data
     })
     return globalData;
 }
